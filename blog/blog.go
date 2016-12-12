@@ -39,6 +39,7 @@ func init() {
 	http.HandleFunc("/blog/", redirect)
 	http.Handle("/fonts/", http.FileServer(http.Dir("static")))
 	http.Handle("/fonts.css", http.FileServer(http.Dir("static")))
+	http.Handle("/style.css", http.FileServer(http.Dir("static")))
 	http.Handle("/lib/godoc/", http.StripPrefix("/lib/godoc/", http.HandlerFunc(staticHandler)))
 }
 
