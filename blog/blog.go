@@ -22,11 +22,11 @@ const hostname = "daidado.com" // default hostname for blog server
 var config = blog.Config{
 	Hostname:     hostname,
 	BaseURL:      "//" + hostname,
-	GodocURL:     "//golang.org",
+	GodocURL:     "//daidado.com",
 	HomeArticles: 5,  // articles to display on the home page
 	FeedArticles: 10, // articles to include in Atom and JSON feeds
 	PlayEnabled:  true,
-	FeedTitle:    "The Go Programming Language Blog",
+	FeedTitle:    "Daily Data Dosage",
 }
 
 func init() {
